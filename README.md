@@ -1,30 +1,30 @@
 # Flask-Quiz-API - Readme
 
-Table of Contents:
+# Table of Contents:
 
 - Introduction
 - Installation
 - Usage
 
 
-Introduction:
+# Introduction:
 
 Welcome to Quiz API - a trivia quiz application that prompts users to fill in a form and, based on their input, generates questions for the user's trivia. It uses an open API to fetch the questions based on the user's preferences.
 
 
-Installation:
+# Installation:
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 
-Prerequisites:
+# Prerequisites:
 
 - Python 3.6 or higher
 - Flask 1.1.2 or higher
 - requests
 
 
-Installing:
+# Installing:
 
 - Clone the repository: git clone https://github.com/jorgeaponte1/Flask-Quiz-API.git
 - Navigate into the cloned repository: cd Quiz-API
@@ -35,7 +35,7 @@ Installing:
   - Install the dependencies: pip install -r requirements.txt
 
 
-Usage:
+# Usage:
 
 1. Run the application: python app.py
 2. Open a web browser and navigate to http://127.0.0.1:5500/.
@@ -44,7 +44,7 @@ Usage:
 5. Your score will be displayed along with the correct answers to the questions.
 
 
-Endpoints:
+# Endpoints:
 
 - '/' - Renders the landing page where the user can fill in the form to start the trivia quiz.
 - '/categories' - Returns JSON data of all categories available for the trivia quiz.
