@@ -2,9 +2,9 @@
 
 Table of Contents:
 
--Introduction
--Installation
--Usage
+- Introduction
+- Installation
+- Usage
 
 
 Introduction:
@@ -46,7 +46,7 @@ Usage:
 
 Endpoints:
 
-'/' - Renders the landing page where the user can fill in the form to start the trivia quiz.
-'/categories' - Returns JSON data of all categories available for the trivia quiz.
-'/questions' - Based on the form data, fetches and displays the trivia questions.
-'/score' - Displays the user's score and the correct answers to the questions.
+- '/' - Renders the landing page where the user can fill in the form to start the trivia quiz.
+- '/categories' - Returns JSON data of all categories available for the trivia quiz.
+- '/questions' - Based on the form data, fetches and displays the trivia questions.
+- '/score' - Displays the user's score and the correct answers to the questions.
