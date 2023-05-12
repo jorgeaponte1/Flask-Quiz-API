@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answers</title>
+</head>
+<body style="background-color: aquamarine;">
+    <h1 style ="text-align: center;">Score</h1>
+    <p style ="text-align: center;">
+        You got {{ score_prompt }} correct.
+        {% if score == 0 %} 
+            Ohhhh man.... 0 questions correct. May I suggest an easier difficulty. 
+        {% elif score == 100 %}
+            Congratulations!! You got all the questions correct! Try and test yourself in a different category.
+        {% else %}
+            Try again to improve your score!
+        {% endif %}
+    </p>
+    <h1 style="text-align: center;">Answers</h1>
+    <ol style="display: flex; flex-direction: column; flex-wrap: wrap; align-content: space-around;">
+        {% for question in questionsData %}
+            <li>
+                <p>{{ question.question }}</p>
+                <ul>
+                        <li>Correct answer: {{ question.correct_answer }}</li>
+                        <li>Your choice: {{ user_answers[loop.index0] }}</li>
+                </ul>
+            </li>
+            <br>
+        {% endfor %}
+    </ol>
+    <a style="text-align: center; display: block;" href="{{ url_for('landingpage') }}">Home</a>
+</body>
+</html>

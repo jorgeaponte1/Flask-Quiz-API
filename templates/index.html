@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz API</title>
+</head>
+<body style="text-align: center; background-color: aquamarine;">
+    <h1 style="text-align: center;">Welcome to my Quiz API</h1>
+    <p><h2 style="text-align: center; padding-bottom:50px;">Fill out the form below to get your list of questions</h2></p>
+    <div style="display:flex; justify-content: center;">
+    <form action="/questions" method="POST">
+        <p><label for="languages">Category of Questions:</label></p>
+        <select name="trivia_category" id="category">
+            {% for category in category_data %}
+                <option value="{{ category['id'] }}">{{ category['name'] }}</option>
+            {% endfor %}
+        </select>
+        <p>Enter the amount of questions:</p>
+        <input type="number" name="trivia_amount" max="50" min="1" required>
+
+        <p>Select Difficulty:</p>
+        <select name="trivia_difficulty" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        
+        <p>Select Type of Question:</p>
+        <select name="trivia_type" id="difficulty">
+            <option value="multiple">Multiple Choice</option>
+            <option value="boolean">True / False</option>
+        </select>
+
+        <p style="margin-top: 50px;"><input type="submit" value="Submit" style="cursor: pointer;"></p>
+    </form>
+    </div>
+</body>
+</html>
