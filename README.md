@@ -1,8 +1,11 @@
 # Flask-Quiz-API - Readme
 
-Table of Contents
+Table of Contents:
+
 Introduction
+
 Installation
+
 Usage
 
 Introduction
@@ -15,7 +18,9 @@ Prerequisites
 Python 3.6 or higher
 Flask 1.1.2 or higher
 requests
-Installing
+
+Installing:
+
 Clone the repository: git clone https://github.com/jorgeaponte1/Flask-Quiz-API.git
 
 Navigate into the cloned repository: cd Quiz-API
@@ -27,16 +32,16 @@ Create a virtual environment: virtualenv venv
 Activate the virtual environment: source venv/bin/activate (Linux/Mac) or .\venv\Scripts\activate (Windows)
 Install the dependencies: pip install -r requirements.txt
 
-Usage
-Run the application: python app.py
+Usage:
+1. Run the application: python app.py
 
-Open a web browser and navigate to http://127.0.0.1:5500/.
+2. Open a web browser and navigate to http://127.0.0.1:5500/.
 
-Fill out the form to select the category, number of questions, difficulty, and type of question. Click on "Submit" when done.
+3. Fill out the form to select the category, number of questions, difficulty, and type of question. Click on "Submit" when done.
 
-The questions will be displayed. Select an answer for each question and then click on "Submit".
+4. The questions will be displayed. Select an answer for each question and then click on "Submit".
 
-Your score will be displayed along with the correct answers to the questions.
+5. Your score will be displayed along with the correct answers to the questions.
 
 Endpoints
 / - Renders the landing page where the user can fill in the form to start the trivia quiz.
